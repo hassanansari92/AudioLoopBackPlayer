@@ -30,6 +30,8 @@
         {
             txtName = new TextBox();
             btnBrowse = new Button();
+            txtFrom = new TextBox();
+            txtTo = new TextBox();
             SuspendLayout();
             // 
             // txtName
@@ -49,11 +51,27 @@
             btnBrowse.UseVisualStyleBackColor = true;
             btnBrowse.Click += btnBrowse_Click;
             // 
+            // txtFrom
+            // 
+            txtFrom.Location = new Point(84, 187);
+            txtFrom.Name = "txtFrom";
+            txtFrom.Size = new Size(125, 27);
+            txtFrom.TabIndex = 2;
+            // 
+            // txtTo
+            // 
+            txtTo.Location = new Point(84, 220);
+            txtTo.Name = "txtTo";
+            txtTo.Size = new Size(125, 27);
+            txtTo.TabIndex = 3;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(621, 427);
+            Controls.Add(txtTo);
+            Controls.Add(txtFrom);
             Controls.Add(btnBrowse);
             Controls.Add(txtName);
             Name = "Form1";
@@ -65,5 +83,7 @@
         #endregion
         private TextBox txtName;
         private Button btnBrowse;
+        private TextBox txtFrom;
+        private TextBox txtTo;
     }
 }
